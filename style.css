@@ -1,0 +1,17 @@
+:root {
+
+  }
+body {
+    background-color: #eddece;
+}
+
+h1 {
+    font-family: "Plein-BoldItalic";
+  }
+a, .card {
+    font-family: "Plein-Light";
+}
+p, hr {
+    font-family: "Plein-Bold";
+    color: #CC4B23;
+}

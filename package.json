@@ -1,0 +1,9 @@
+{
+  "name": "mdb-standard-app",
+  "version": "7.1.0",
+  "homepage": "https://mdbootstrap.com/docs/standard/",
+  "license": "MIT",
+  "dependencies": {
+    "animate.css": "^4.1.1"
+  }
+}
