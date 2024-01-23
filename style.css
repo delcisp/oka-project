@@ -5,6 +5,14 @@ body {
 h1 {
     font-family: "Plein-BoldItalic";
   }
+.card-config {
+  background-color: #993e11;
+}
+
+.text-config {
+  color: #eddece;
+}
+
 a, .card {
     font-family: "Plein-Light";
 }
@@ -119,3 +127,48 @@ p, hr {
     .testimonial:before{ border-right: 325px solid transparent; }
     .testimonial:after{ border-left: 325px solid transparent; }
 }
+.arrow-container {
+  margin-top: 100px;
+  padding: 30px;
+  margin-left: 30px;
+}
+
+.pcard {
+  font-size: medium;
+  color: #eddece;
+}
+.first-color {
+  color: #fff;
+}
+
+.cardHow {
+  width: 320px;
+  height: 400px;
+  border-radius: 20px;
+  background: #CC4B23;
+  position: relative;
+  padding: 1.8rem;
+  border: 2px solid #eddece;
+  transition: 0.5s ease-out;
+  overflow: visible;
+ }
+ 
+ .cardHow-details {
+  color: black;
+  height: 100%;
+  gap: .5em;
+  display: grid;
+  place-content: center;
+ }
+
+
+ /*Hover*/
+ .cardHow:hover {
+  border-color: #eddece;
+  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+ }
+ 
+ .cardHow:hover .card-button {
+  transform: translate(-50%, 50%);
+  opacity: 1;
+ }
