@@ -1,0 +1,8 @@
+PALETA DE CORES OKA PROJECT
+
+#EDDECE - branco
+#993E11 - marrom escuro
+#CC4B23 - laranja
+ 
+#004921 - verde escuro
+#D3B2D4 - lilás
