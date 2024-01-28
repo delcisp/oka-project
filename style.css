@@ -11,16 +11,17 @@ body {
 
 #frase-inicial-first  {
   font-family: "Plein";
-  font-size: 30px;
+  font-size: 45px;
   color: #eddece;
   margin: 0;
   max-width: 500px;
+  margin: 0;
 }
 
 
 #frase-inicial-second, hr {
   font-family: "Plein";
-  font-size: 22px;
+  font-size: 27px;
   color: #eddece;
   max-width: 500px;
 }
@@ -47,8 +48,9 @@ a, .card {
 
 .p-config {
   color: #d3b2d4;
-  font-size: 40px;
-  margin: 0;
+  font-size: 45px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .whatsapp-link {
@@ -57,7 +59,7 @@ a, .card {
   height: 60px;
   bottom: 40px;
   right: 40px;
-  background-color: #25d366;
+  background-color: #993e11;
   color: #fff ;
   border-radius: 50px;
   text-align: center;
