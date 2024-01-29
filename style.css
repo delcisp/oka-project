@@ -73,12 +73,12 @@ a, .card {
 .nav-item {
   margin-right: 30px;
 }
-.demo{ background: #eddece; }
+.demo{ background: #d3b2d4; }
 .testimonial{
     background: #fff;
     text-align: center;
     padding: 30px 30px 50px;
-    margin: 0 15px 250px;
+    margin: 0 15px 190px;
     position: relative;
 }
 .testimonial:before,
@@ -99,7 +99,7 @@ a, .card {
 .testimonial .icon{
     display: inline-block;
     font-size: 80px;
-    color: #bd986b;
+    color: #d3b2d4;
     margin-bottom: 20px;
     opacity: 0.6;
 }
@@ -119,7 +119,7 @@ a, .card {
     display: inline-block;
     border: 2px solid #fff;
     border-radius: 50%;
-    box-shadow: 0 0 2px 2px #daad86;
+    box-shadow: 0 0 2px 2px #d3b2d4;
     overflow: hidden;
     z-index: 1;
     position: relative;
@@ -153,7 +153,7 @@ a, .card {
 }
 .owl-theme .owl-controls .owl-page.active span,
 .owl-theme .owl-controls.clickable .owl-page:hover span{
-    background: #ffd9b8;
+    background: #d3b2d4;
     border-color: #fff;
 }
 @media only screen and (max-width: 650px) and (min-width: 400px){
