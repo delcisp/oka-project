@@ -53,6 +53,11 @@ a, .card {
   margin-bottom: 40px;
 }
 
+.subtitle {
+  color: #004921;
+  font-size:x-large; 
+} 
+
 .whatsapp-link {
   position: fixed;
   width: 60px;
