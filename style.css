@@ -5,8 +5,16 @@ body {
 
 #container-sessao-1 {
   background-color: #993e11;
- 
   
+}
+#sessao-5-servicos {
+  background-color: #993e11;
+}
+
+#texto-dentro-imagem {
+  position: absolute;
+  font-family: "Plein";
+  color:#004921 ;
 }
 
 #frase-inicial-first  {
