@@ -6,13 +6,34 @@ body {
 .sessao-1 {
   height: 200px;
 }
+.card-consultorias {
+  background-color: #eddece;
+  border-radius: 35px;
+  box-shadow:1px 1px 4px #eddece;
+  width: 430px;
 
-#conteudo-imagem {
-  position: absolute;
-  left: 50%;
-  transform: translate(-170%, 85%);
-  color: #CC4B23;
+  p {
+    color: #CC4B23;
+    white-space: nowrap;
+  }
+  li {
+    color: #CC4B23;
+  }
 }
+
+.botao-modal {
+  font-size: larger;
+  background-color: #CC4B23;
+  color: #eddece;
+  border-radius: 40px;
+  width: 200px;
+  height: 48px;
+}
+.botao-modal:hover {
+  background-color: #993e11;
+  color: #eddece;
+}
+
 /*  transform: translate(-155%, 85%); */
 
 @media screen and (max-width:1024px) and (min-width: 768px)  {
@@ -114,8 +135,8 @@ a, .card {
 }
 
 .subtitle {
-  color: #004921;
-  font-size:x-large; 
+  color: #eddece;
+  font-size: 24px; 
 } 
 
 .whatsapp-link {

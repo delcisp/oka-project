@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/mdb.es.min.js"></script>
+    <script type="text/javascript" src="js/mdb.umd.min.js"></script>
   </head>
   <script>
     $(document).ready(function(){
@@ -30,6 +32,9 @@
       autoPlay:true
   });
 });
+$('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').trigger('focus')
+})
   </script>
   <body>
     <a class="whatsapp-link" href="https://web.whatsapp.com/send?phone=5592981421867" target="_blank">
@@ -68,7 +73,7 @@
                 <a class="nav-link" href="#">COMO FUNCIONA</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">SERVIÇOS</a>
+                <a class="nav-link" href="#">CONSULTORIAS</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">SERVIÇOS</a>
@@ -351,34 +356,98 @@
       </div>
     </div>
     <div id="sessao-5-servicos">
-      <p class="text-center p-config" style="color: #004921; margin-bottom: 0;" >CONSULTORIAS</p>
+      <p class="text-center p-config" style="color: #eddece; margin-bottom: 0;" >CONSULTORIAS</p>
       <p class="text-center subtitle">Aqui estão nossos pacotes direcionados a quem deseja um novo visual para seu espaço.
         Os pacotes foram dividos por nível de complexidade e detalhamento, escolha o ideal para você! </p>
-        <div class="row " style="margin: 0;" >
-        <div class="col-md-4 d-flex justify-content-center ">
-          <img class="img-service" src="img/shape_consultoria_3.png" alt="">
-          <div id="conteudo-imagem">
-          <p class="fs-2">CONSULTORIA EXPRESS</p>
-          <p class="fs-3"> INCLUSO:</p>
+        <div class="row" >
+          <div class="col-md-4 d-flex justify-content-center ">
+            <div class="card card-consultorias mb-5">
+              <div class="text-center" id="image-consultorias ">
+                <img src="img/OKA_Simbolo_Terracota.png"
+                width="150px" alt="">
+              </div>
+              <div class="card-body">
+                <p class="fs-2">CONSULTORIA EXPRESS</p>
+                <p class="fs-3 text-center"> INCLUSO:</p>
+            <ul>
+              <li class="fs-4">Painel de estilos</li>
+              <li class="fs-4">Referências</li>
+              <li class="fs-4">Vídeo chamada para apresentação com a equipe (1h)</li>
+              <li class="fs-4">1 alteração gratuita</li>
+            </ul>
+            
+              </div>
+<div class="d-flex justify-content-center mt-3 mb-3">
+  <button type="button" class="btn botao-modal" data-toggle="modal" data-target=".bd-example-modal-lg">VER DETALHES</button>
+</div>
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      conteido modal
+    </div>
+  </div>
+</div>  
+              </div>
+          </div>
+        <div class="col-md-4 d-flex justify-content-center">
+          <div class="card card-consultorias mb-5">
+            <div class="text-center" id="image-consultorias ">
+              <img src="img/OKA_Simbolo_Terracota.png"
+              width="150px" alt="">
+            </div>
+            <div class="card-body">
+              <p class="fs-2">CONSULTORIA PREMIUM</p>
+              <p class="fs-3 text-center"> INCLUSO:</p>
           <ul>
             <li class="fs-4">Painel de estilos</li>
+            <li class="fs-4">Planta baixa - Layout e Técnica</li>
+            <li class="fs-4">Vista de cada parede</li>
+            <li class="fs-4">Cortes</li>
+            <li class="fs-4">Imagens realistas (render) </li>
+            <li class="fs-4">Imagem 360</li>
             <li class="fs-4">Referências</li>
-            <li style="font-size: 22px;">Vídeo chamada para apresentação com a equipe (1h)</li>
+            <li class="fs-4">Vídeo chamada para apresentação com a equipe (2h)</li>
             <li class="fs-4">1 alteração gratuita</li>
           </ul>
-          </div>
-
-        </div>
-        <div class="col-md-4 d-flex justify-content-center">
-          <img src="img/shape_consultoria_3.png" alt="">
-          <div id="conteudo-imagedm">
-            <p class="fs-1">CONSULTORIA EXPRESS</p>
+            </div>
+            <div class="d-flex justify-content-center mt-3 mb-3">
+              <button type="button" class="btn botao-modal" data-toggle="modal" data-target=".bd-example-modal-lg">VER DETALHES</button>
+            </div>
+            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  conteido modal
+                </div>
+              </div>
+            </div>
             </div>
         </div>
-        <div class="col-md-4 d-flex justify-content-center" >
-          <img src="img/shape_consultoria_3.png" alt="" >
-          <div id="conteudo-imagemd">
-            <p class="fs-1" >SERVIÇOS ADICIONAIS</p>
+        <div class="col-md-4 d-flex justify-content-center">
+          <div class="card card-consultorias mb-5">
+            <div class="text-center" id="image-consultorias ">
+              <img src="img/OKA_Simbolo_Terracota.png"
+              width="150px" alt="">
+            </div>
+            <div class="card-body">
+              <p class="fs-2">SERVIÇOS ADICIONAIS</p>
+              <p class="fs-3 text-center"> INCLUSO:</p>
+          <ul>
+            <li class="fs-4">Detalhamento de marcenaria</li>
+            <li class="fs-4">Planta de iluminação</li>
+            <li style="font-size: 22px;">Pontos elétricos</li>
+            <li class="fs-4">Pontos hidraúlicos</li>
+          </ul>
+            </div>
+            <div class="d-flex justify-content-center mb-3 mt-3">
+              <button type="button" class="btn botao-modal" data-toggle="modal" data-target=".bd-example-modal-lg">VER DETALHES</button>
+            </div>
+            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  conteido modal
+                </div>
+              </div>
+            </div>
             </div>
         </div>
 
