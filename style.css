@@ -3,6 +3,54 @@ body {
     font-family: "Plein";
 }
 
+.sessao-1 {
+  height: 200px;
+}
+
+#conteudo-imagem {
+  position: absolute;
+  left: 50%;
+  transform: translate(-170%, 85%);
+  color: #CC4B23;
+}
+/*  transform: translate(-155%, 85%); */
+
+@media screen and (max-width:1024px) and (min-width: 768px)  {
+  .sessao-1 {
+    height: 700px;
+  }
+  #sessao-5-servicos {
+    height: 750px;
+  
+  }
+}
+
+@media screen and (max-width: 1670px) {
+  .sessao-1 {
+    height: 860px;
+  }
+  #sessao-5-servicos {
+    .row {
+      margin-left: 40px;
+    }
+  }
+}
+
+/* tela 24pol  */
+@media screen and (min-width: 1680px) {
+  .sessao-1 {
+    height: 865px;
+  }
+  #sessao-5-servicos {
+    .row {
+      margin-left: 40px;
+    }
+  }
+  #sessao-4-cards {
+    height: 940px;
+  }
+}
+
 #container-sessao-1 {
   background-color: #993e11;
   
@@ -15,6 +63,7 @@ body {
   position: absolute;
   font-family: "Plein";
   color:#004921 ;
+
 }
 
 #frase-inicial-first  {
@@ -26,6 +75,9 @@ body {
   margin: 0;
 }
 
+.img-card {
+  position: relative;
+}
 
 #frase-inicial-second, hr {
   font-family: "Plein";
@@ -153,6 +205,9 @@ a, .card {
     font-size: 14px;
     color: #ffd9b8;
 }
+.owl-wrapper-outer {
+  height: 480px;
+}
 .owl-theme .owl-controls{
     margin-top: 0;
 }
@@ -189,8 +244,8 @@ a, .card {
 
 .cardHow {
   font-family: 'Plein';
-  width: 320px;
-  height: 400px;
+  width: 350px;
+  height: 600px;
   border-radius: 20px;
   background: #CC4B23;
   position: relative;
@@ -202,13 +257,13 @@ a, .card {
  
  .cardHow-details {
   color: black;
-  height: 100%;
-  gap: .2em;
+  height: 80%;
+
   display: grid;
   place-content: center;
  }
  .cardHow:hover {
-  border-color: #eddece;
+  border-color: #004921;
   box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
  }
  
