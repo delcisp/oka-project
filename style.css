@@ -126,6 +126,13 @@ a, .card {
   margin: 0;
   background-image: url("img/CROQUI.png") ;
 }
+.opcoesconsultorias {
+  color: #CC4B23;
+}
+.opcoesconsultorias:hover {
+  border-bottom: 2px solid #004921;
+  color: #004921;
+}
 
 .p-config {
   color: #d3b2d4;
