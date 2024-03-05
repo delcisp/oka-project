@@ -299,3 +299,17 @@ a, .card {
   transform: translate(-50%, 50%);
   opacity: 1;
  }
+ .modal-styles {
+  background-color: #CC4B23;
+ }
+ .h4-config {
+  color:#CC4B23 ;
+  font-family: 'Plein';
+ }
+ .text-consultoria {
+  margin-bottom: 10px;
+ }
+ .modal-header, .modal-body, .modal-footer {
+  color: #eddece;
+  background-color: #eddece;
+ }

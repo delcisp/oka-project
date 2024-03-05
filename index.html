@@ -336,7 +336,7 @@ $('#myModal').on('shown.bs.modal', function () {
           <div class="cardHow text-center">
             <img src="img/como-3.png" alt="" width="110px">
             <div class="cardHow-details">
-              <p class="text-title fs-4 first-color">Entre em contato conosco pelo WhatsApp e compartilhe suas informações conforme as orientações fornecidas.</p>
+              <p class="text-title fs-3 first-color">Entre em contato conosco pelo WhatsApp e compartilhe suas informações conforme as orientações fornecidas.</p>
             </div>
            
           </div>
@@ -346,7 +346,7 @@ $('#myModal').on('shown.bs.modal', function () {
           <div class="cardHow text-center">
             <img src="img/como-4.png" alt="" width="110px">
             <div class="cardHow-details">
-              <p class="text-title fs-4 first-color">Receba seu projeto e conte com nosso suporte pós-entrega para esclarecer dúvidas, 
+              <p class="text-title fs-3 first-color">Receba seu projeto e conte com nosso suporte pós-entrega para esclarecer dúvidas, 
                 realizar ajustes ou fornecer assistência contínua conforme necessário.</p>
           
             </div>
@@ -419,7 +419,26 @@ $('#myModal').on('shown.bs.modal', function () {
               <p class="fs-2">CONSULTORIA PREMIUM</p>
               <p class="fs-3 text-center"> INCLUSO:</p>
           <ul>
-            <li class="fs-4"><a class="opcoesconsultorias" aria-current="page" href="#">Painel de estilos</a></li>
+            <li class="fs-4"><a class="opcoesconsultorias" aria-current="page" data-bs-toggle="modal" data-bs-target="#painelEstilo" href="#">Painel de estilos</a></li>
+            <div class="modal fade modal-styles " id="painelEstilo" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="painelEstilo" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header model-colors">
+                    <p class="fs-2" id="painelEstiloLabel">O que é painel de estilos?</p>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <img src="img/img_painel_estilos.jpg" alt="">
+                  <div class="modal-body">
+                    <p class="fs-3 text-center text-consultoria">PAINEL DE ESTILOS</p>
+                  <h4 class="text-center h4-config ">o painel de estilos é a combinação de referências visuais das preferências e personalidade do cliente.</h4>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn botao-modal" data-bs-dismiss="modal">Fechar</button>
+                
+                  </div>
+                </div>
+              </div>
+            </div>
             <li class="fs-4"><a class="opcoesconsultorias" aria-current="page" href="#">Planta baixa - Layout e Técnica</a></li>
             <li class="fs-4"><a class="opcoesconsultorias" aria-current="page" href="#">Vista de cada parede</a></li>
             <li class="fs-4"><a class="opcoesconsultorias" aria-current="page" href="#">Cortes</a></li>
