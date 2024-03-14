@@ -4,6 +4,7 @@
   "homepage": "https://mdbootstrap.com/docs/standard/",
   "license": "MIT",
   "dependencies": {
-    "animate.css": "^4.1.1"
+    "animate.css": "^4.1.1",
+    "hover.css": "^2.3.2"
   }
 }

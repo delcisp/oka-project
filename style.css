@@ -7,30 +7,26 @@ body {
   height: 200px;
 }
 .card-consultorias {
-  background-color: #eddece;
-  border-radius: 35px;
-  box-shadow:1px 1px 4px #eddece;
-  width: 430px;
+  border: 2px solid #ddd;
 
-  p {
-    color: #CC4B23;
-    white-space: nowrap;
-  }
-  li {
-    color: #CC4B23;
-  }
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 4px 21px -12px rgba(0, 0, 0, .66);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+  background-color: #CC4B23;
 }
 
 .botao-modal {
   font-size: larger;
-  background-color: #CC4B23;
-  color: #eddece;
+  background-color: #eddece;
+  color: #CC4B23;
   border-radius: 40px;
-  width: 200px;
+  width: 225px;
   height: 48px;
+  white-space: nowrap;
 }
 .botao-modal:hover {
-  background-color: #993e11;
+  
   color: #eddece;
 }
 
@@ -72,51 +68,15 @@ body {
   }
 }
 
-#container-sessao-1 {
-  background-color: #993e11;
-  
-}
-#sessao-5-servicos {
-  background-color: #993e11;
-}
-
-#texto-dentro-imagem {
-  position: absolute;
-  font-family: "Plein";
-  color:#004921 ;
-
-}
-
-#frase-inicial-first  {
-  font-family: "Plein";
-  font-size: 45px;
-  color: #eddece;
-  margin: 0;
-  max-width: 500px;
-  margin: 0;
-}
 
 .img-card {
   position: relative;
 }
 
-#frase-inicial-second, hr {
-  font-family: "Plein";
-  font-size: 27px;
-  color: #eddece;
-  max-width: 500px;
-}
 
 h1 {
     font-family: "Plein";
   }
-.card-config {
-  background-color: #d3b2d4;
-}
-
-.text-config {
-  color: #004921;
-}
 
 a, .card {
     font-family: "Plein";
@@ -127,22 +87,20 @@ a, .card {
   background-image: url("img/CROQUI.png") ;
 }
 .opcoesconsultorias {
-  color: #CC4B23;
+  color: #eddece;
 }
 .opcoesconsultorias:hover {
-  border-bottom: 2px solid #004921;
-  color: #004921;
+  border-bottom: 2px solid #D3B2D4;
+  color: #eddece;
 }
 
 .p-config {
-  color: #d3b2d4;
+  color: #CC4B23;
   font-size: 45px;
-  margin-top: 40px;
-  margin-bottom: 40px;
 }
 
 .subtitle {
-  color: #eddece;
+  color: #CC4B23;
   font-size: 24px; 
 } 
 
@@ -152,7 +110,7 @@ a, .card {
   height: 60px;
   bottom: 40px;
   right: 40px;
-  background-color: #993e11;
+  background-color: #d3b2d4;
   color: #fff ;
   border-radius: 50px;
   text-align: center;
@@ -270,38 +228,7 @@ a, .card {
   color: #fff;
 }
 
-.cardHow {
-  font-family: 'Plein';
-  width: 350px;
-  height: 600px;
-  border-radius: 20px;
-  background: #CC4B23;
-  position: relative;
-  padding: 1.8rem;
-  border: 2px solid #eddece;
-  transition: 0.5s ease-out;
-  overflow: visible;
- }
- 
- .cardHow-details {
-  color: black;
-  height: 80%;
 
-  display: grid;
-  place-content: center;
- }
- .cardHow:hover {
-  border-color: #004921;
-  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
- }
- 
- .cardHow:hover .card-button {
-  transform: translate(-50%, 50%);
-  opacity: 1;
- }
- .modal-styles {
-  background-color: #CC4B23;
- }
  .h4-config {
   color:#CC4B23 ;
   font-family: 'Plein';

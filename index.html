@@ -11,9 +11,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="node_modules/hover.css/css/hover.css">
     <link rel="stylesheet" href="css/mdb.min.css" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="teste.css">
+    <link rel="stylesheet" href="testetwo.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
@@ -21,6 +23,9 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
   </head>
   <script>
+    document.querySelectorAll(".projcard-description").forEach(function(box) {
+  $clamp(box, {clamp: 6});
+});
     $(document).ready(function(){
   $("#testimonial-slider").owlCarousel({
       items:3,
@@ -36,13 +41,13 @@ $('#myModal').on('shown.bs.modal', function () {
   $('#myInput').trigger('focus')
 })
   </script>
-  <body>
+  <body style="background-color: #eddece;">
     <a class="whatsapp-link" href="https://web.whatsapp.com/send?phone=5592981421867" target="_blank">
       <i class="fa fa-whatsapp"></i>
     </a>
-    <div class="container-fluid">
-      <nav class="navbar-expand-lg bg-body-tertiary" >
-        <div class="container-fluid">
+    <div class="container-fluid" style="background-color: #CC4B23;" >
+      <nav class="navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid" style="background-color: #CC4B23;" >
           <button data-mdb-collapse-init
             class="navbar-toggler"
             type="button"
@@ -56,13 +61,13 @@ $('#myModal').on('shown.bs.modal', function () {
           <div class="collapse navbar-collapse" id="navbarRightAlignExample">
     <a class="navbar-brand me-2">
       <img class=""
-        src="img/OKA_Terracota.png"
+        src="img/OKA_Sand.png"
         width="160"
         alt="OKA Logo"
         style="margin-left: 20px;"
       />
     </a>
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0" style="color: #eddece; " >
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="#">HOME</a>
               </li>
@@ -100,31 +105,405 @@ $('#myModal').on('shown.bs.modal', function () {
           </div>
         </div>
       </nav>
-      <div id="container-sessao-1" class="row sessao-1">
-        <div id="primeira-imagem" class="col-md-6">
-          <img src="img/teste.png" class="mt-2 animate__animated animate__fadeInLeft " alt="" srcset="">
-        </div>
-        <div class="col-md-6">
-          <div id="logo-sessao-1" class="d-flex justify-content-center mt-5 animate__animated animate__fadeInRight ">
-            <img src="img/OKA_Sand.png"
-            style="margin-top: 25px;"
-            width="550px"
-            alt=""
-            sizes=""
-            srcset="">
+    </div>
+     
+    <div id="sessao-5-servicos">
+      <div class="p-config text-center"> CONSULTORIAS</div>
+      <p class="text-center fs-3 " style="margin: 0; color: #CC4B23;" >aqui uma intro e vou mostrar todos os pacotes e tals</p>
+      <div class="card mb-3 card-consultorias hvr-grow mt-3 ms-4" style="max-width: 1300px; height: 300px; ">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img class="projcard-img rounded-5" src="img/arquitetura-6.jpg" />
+            <div class="projcard-textbox"></div>
           </div>
-          <div id="texto-sessao-1" class="d-flex justify-content-center animate__animated animate__fadeInRight ">
-            <p class=" animate__an imated animate__fadeInLeft" id="frase-inicial-first">"CRIANDO ESPAÇOS ÚNICOS, 
-              </p>
-    </div> 
-          <div id="texto-sessao-2" class="d-flex justify-content-center ms-5 animate__animated animate__fadeInRight">
-            <p id="frase-inicial-second" class="ms-5" style="margin: 0;" >MOLDADOS PELA AUTENCIDADE E GUIADOS PELA SUA PERSONALIDADE!"</p> 
+          <div class="col-md-8">
+            <div class="card-body">
+              <div class="projcard-title">CONSULTORIAS PREMIUM</div>
+              <div class="projcard-subtitle">Para pessoas q querem ter uma consultoria premium sabe</div>
+              <div class="projcard-bar hvr-grow "></div>
+            <div class="projcard-subtitle">INCLUSO:</div>
+            <div class="row">
+              <div class="col-md-6">          
+                <li class="projcard-subtitle"><a class="opcoesconsultorias" aria-current="page" data-bs-toggle="modal" data-bs-target="#painelEstilo" href="#">Painel de estilos</a></li>
+                  <div class="modal fade modal-styles " id="painelEstilo" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="painelEstilo" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header model-colors">
+                          <p class="fs-2" id="painelEstiloLabel">O que é painel de estilos?</p>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <img src="img/img_painel_estilos.jpg" alt="">
+                        <div class="modal-body">
+                          <p class="fs-3 text-center text-consultoria">PAINEL DE ESTILOS</p>
+                        <h4 class="text-center h4-config ">o painel de estilos é a combinação de referências visuais das preferências e personalidade do cliente.</h4>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn botao-modal" data-bs-dismiss="modal">Fechar</button>
+                      
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <li class="projcard-subtitle"><a class="opcoesconsultorias" aria-current="page" data-bs-toggle="modal" data-bs-target="#plantaLayout" href="#">Planta baixa - Layout</a></li>
+                  <div class="modal fade modal-styles " id="plantaLayout" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="plantaLayout" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header model-colors">
+                          <p class="fs-2" id="plantaLayout">O que é planta baixa de Layout?</p>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <img src="img/img_painel_estilos.jpg" alt="">
+                        <div class="modal-body">
+                          <p class="fs-3 text-center text-consultoria">PLANTA BAIXA LAYOUT</p>
+                        <h4 class="text-center h4-config ">Representação do espaço em vista superior, possibilitando a visualização de fluxos e disposição de móveis no ambiente.</h4>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn botao-modal" data-bs-dismiss="modal">Fechar</button>
+                      
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <li class="projcard-subtitle"><a class="opcoesconsultorias" aria-current="page" data-bs-toggle="modal" data-bs-target="#plantaTecnica" href="#">Planta baixa - Técnica</a></li>
+                  <div class="modal fade modal-styles " id="plantaTecnica" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="plantaTecnica" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header model-colors">
+                          <p class="fs-2" id="plantaTecnica">O que é planta baixa Técnica?</p>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <img src="img/img_painel_estilos.jpg" alt="">
+                        <div class="modal-body">
+                          <p class="fs-3 text-center text-consultoria">PLANTA BAIXA TÉCNICA</p>
+                        <h4 class="text-center h4-config ">representação do espaço em vista superior com medidas e detalhes técnicos.</h4>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn botao-modal" data-bs-dismiss="modal">Fechar</button>
+                      
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <li class="projcard-subtitle"><a class="opcoesconsultorias" aria-current="page" data-bs-toggle="modal" data-bs-target="#vistas" href="#">Vistas de cada parede</a></li>
+                  <div class="modal fade modal-styles " id="vistas" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="vistas" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header model-colors">
+                          <p class="fs-2" id="vistas">O que são as vistas?</p>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <img src="img/img_painel_estilos.jpg" alt="">
+                        <div class="modal-body">
+                          <p class="fs-3 text-center text-consultoria">VISTAS</p>
+                        <h4 class="text-center h4-config ">demonstração de cada parede com informações de altura, dimensões e detalhamento de elementos importantes para o espaço.</h4>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn botao-modal" data-bs-dismiss="modal">Fechar</button>
+                      
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <li class="projcard-subtitle"><a class="opcoesconsultorias" aria-current="page" data-bs-toggle="modal" data-bs-target="#cortes" href="#">Cortes</a></li>
+                  <div class="modal fade modal-styles " id="cortes" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="cortes" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header model-colors">
+                          <p class="fs-2" id="cortes">O que são cortes?</p>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <img src="img/img_painel_estilos.jpg" alt="">
+                        <div class="modal-body">
+                          <p class="fs-3 text-center text-consultoria">CORTES</p>
+                        <h4 class="text-center h4-config ">neste caso é feito uma linha imaginária estrategicamente posicionada cortando a área, dessa forma é representado 2 ou mais ambientes em um único corte.</h4>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn botao-modal" data-bs-dismiss="modal">Fechar</button>
+                      
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            
+                </ul> 
+              </div>
+              <div class="col-md-6">
+                  <ul>
+                      <li class="projcard-subtitle"><a class="opcoesconsultorias" aria-current="page" href="#">Imagens realistas (render) </a></li>
+      <li class="projcard-subtitle"><a class="opcoesconsultorias" aria-current="page" href="#">Imagem 360</a></li>
+      <li class="projcard-subtitle"><a class="opcoesconsultorias" aria-current="page" href="#">Referências</a></li>
+      <li class="projcard-subtitle"><a class="opcoesconsultorias" aria-current="page" href="#">Vídeo chamada com a equipe</a></li>
+      <li class="projcard-subtitle"><a class="opcoesconsultorias" aria-current="page" href="#">Bônus: 1 alteração gratuita</a></li>
+                  </ul>
+              </div>
+            </div>
+            </div>
           </div>
         </div>
       </div>
-  
     </div>
-
+    <div class="card mb-3 card-consultorias hvr-grow ms-auto me-4 " style="max-width: 1300px; height: 300px; ">
+      <div class="row g-0">
+       
+        <div class="col-md-8">
+          <div class="card-body">
+            <div class="projcard-title">CONSULTORIAS PREMIUM</div>
+            <div class="projcard-subtitle">Para pessoas q querem ter uma consultoria premium sabe</div>
+            <div class="projcard-bar hvr-grow "></div>
+          <div class="projcard-subtitle">INCLUSO:</div>
+          <div class="row">
+            <div class="col-md-6">          
+              <li class="projcard-subtitle"><a class="opcoesconsultorias" aria-current="page" data-bs-toggle="modal" data-bs-target="#painelEstilo" href="#">Painel de estilos</a></li>
+                <div class="modal fade modal-styles " id="painelEstilo" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="painelEstilo" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header model-colors">
+                        <p class="fs-2" id="painelEstiloLabel">O que é painel de estilos?</p>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <img src="img/img_painel_estilos.jpg" alt="">
+                      <div class="modal-body">
+                        <p class="fs-3 text-center text-consultoria">PAINEL DE ESTILOS</p>
+                      <h4 class="text-center h4-config ">o painel de estilos é a combinação de referências visuais das preferências e personalidade do cliente.</h4>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn botao-modal" data-bs-dismiss="modal">Fechar</button>
+                    
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <li class="projcard-subtitle"><a class="opcoesconsultorias" aria-current="page" data-bs-toggle="modal" data-bs-target="#plantaLayout" href="#">Planta baixa - Layout</a></li>
+                <div class="modal fade modal-styles " id="plantaLayout" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="plantaLayout" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header model-colors">
+                        <p class="fs-2" id="plantaLayout">O que é planta baixa de Layout?</p>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <img src="img/img_painel_estilos.jpg" alt="">
+                      <div class="modal-body">
+                        <p class="fs-3 text-center text-consultoria">PLANTA BAIXA LAYOUT</p>
+                      <h4 class="text-center h4-config ">Representação do espaço em vista superior, possibilitando a visualização de fluxos e disposição de móveis no ambiente.</h4>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn botao-modal" data-bs-dismiss="modal">Fechar</button>
+                    
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <li class="projcard-subtitle"><a class="opcoesconsultorias" aria-current="page" data-bs-toggle="modal" data-bs-target="#plantaTecnica" href="#">Planta baixa - Técnica</a></li>
+                <div class="modal fade modal-styles " id="plantaTecnica" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="plantaTecnica" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header model-colors">
+                        <p class="fs-2" id="plantaTecnica">O que é planta baixa Técnica?</p>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <img src="img/img_painel_estilos.jpg" alt="">
+                      <div class="modal-body">
+                        <p class="fs-3 text-center text-consultoria">PLANTA BAIXA TÉCNICA</p>
+                      <h4 class="text-center h4-config ">representação do espaço em vista superior com medidas e detalhes técnicos.</h4>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn botao-modal" data-bs-dismiss="modal">Fechar</button>
+                    
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <li class="projcard-subtitle"><a class="opcoesconsultorias" aria-current="page" data-bs-toggle="modal" data-bs-target="#vistas" href="#">Vistas de cada parede</a></li>
+                <div class="modal fade modal-styles " id="vistas" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="vistas" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header model-colors">
+                        <p class="fs-2" id="vistas">O que são as vistas?</p>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <img src="img/img_painel_estilos.jpg" alt="">
+                      <div class="modal-body">
+                        <p class="fs-3 text-center text-consultoria">VISTAS</p>
+                      <h4 class="text-center h4-config ">demonstração de cada parede com informações de altura, dimensões e detalhamento de elementos importantes para o espaço.</h4>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn botao-modal" data-bs-dismiss="modal">Fechar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <li class="projcard-subtitle"><a class="opcoesconsultorias" aria-current="page" data-bs-toggle="modal" data-bs-target="#cortes" href="#">Cortes</a></li>
+                <div class="modal fade modal-styles " id="cortes" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="cortes" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header model-colors">
+                        <p class="fs-2" id="cortes">O que são cortes?</p>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <img src="img/img_painel_estilos.jpg" alt="">
+                      <div class="modal-body">
+                        <p class="fs-3 text-center text-consultoria">CORTES</p>
+                      <h4 class="text-center h4-config ">neste caso é feito uma linha imaginária estrategicamente posicionada cortando a área, dessa forma é representado 2 ou mais ambientes em um único corte.</h4>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn botao-modal" data-bs-dismiss="modal">Fechar</button>
+                    
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          
+              </ul> 
+            </div>
+            <div class="col-md-6">
+                <ul>
+                    <li class="projcard-subtitle"><a class="opcoesconsultorias" aria-current="page" href="#">Imagens realistas (render) </a></li>
+    <li class="projcard-subtitle"><a class="opcoesconsultorias" aria-current="page" href="#">Imagem 360</a></li>
+    <li class="projcard-subtitle"><a class="opcoesconsultorias" aria-current="page" href="#">Referências</a></li>
+    <li class="projcard-subtitle"><a class="opcoesconsultorias" aria-current="page" href="#">Vídeo chamada com a equipe</a></li>
+    <li class="projcard-subtitle"><a class="opcoesconsultorias" aria-current="page" href="#">Bônus: 1 alteração gratuita</a></li>
+                </ul>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <img class="projcard-img-left rounded-5" src="img/arquitetura-6.jpg" />
+          <div class="projcard-textbox-left"></div>
+        </div>
+      </div>
+    </div>
+    <div class="card mb-3 card-consultorias hvr-grow ms-4" style="max-width: 1300px; height: 300px; ">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img class="projcard-img rounded-5" src="img/arquitetura-6.jpg" />
+          <div class="projcard-textbox"></div>
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <div class="projcard-title">CONSULTORIAS PREMIUM</div>
+            <div class="projcard-subtitle">Para pessoas q querem ter uma consultoria premium sabe</div>
+            <div class="projcard-bar hvr-grow "></div>
+          <div class="projcard-subtitle">INCLUSO:</div>
+          <div class="row">
+            <div class="col-md-6">          
+              <li class="projcard-subtitle"><a class="opcoesconsultorias" aria-current="page" data-bs-toggle="modal" data-bs-target="#painelEstilo" href="#">Painel de estilos</a></li>
+                <div class="modal fade modal-styles " id="painelEstilo" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="painelEstilo" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header model-colors">
+                        <p class="fs-2" id="painelEstiloLabel">O que é painel de estilos?</p>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <img src="img/img_painel_estilos.jpg" alt="">
+                      <div class="modal-body">
+                        <p class="fs-3 text-center text-consultoria">PAINEL DE ESTILOS</p>
+                      <h4 class="text-center h4-config ">o painel de estilos é a combinação de referências visuais das preferências e personalidade do cliente.</h4>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn botao-modal" data-bs-dismiss="modal">Fechar</button>
+                    
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <li class="projcard-subtitle"><a class="opcoesconsultorias" aria-current="page" data-bs-toggle="modal" data-bs-target="#plantaLayout" href="#">Planta baixa - Layout</a></li>
+                <div class="modal fade modal-styles " id="plantaLayout" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="plantaLayout" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header model-colors">
+                        <p class="fs-2" id="plantaLayout">O que é planta baixa de Layout?</p>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <img src="img/img_painel_estilos.jpg" alt="">
+                      <div class="modal-body">
+                        <p class="fs-3 text-center text-consultoria">PLANTA BAIXA LAYOUT</p>
+                      <h4 class="text-center h4-config ">Representação do espaço em vista superior, possibilitando a visualização de fluxos e disposição de móveis no ambiente.</h4>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn botao-modal" data-bs-dismiss="modal">Fechar</button>
+                    
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <li class="projcard-subtitle"><a class="opcoesconsultorias" aria-current="page" data-bs-toggle="modal" data-bs-target="#plantaTecnica" href="#">Planta baixa - Técnica</a></li>
+                <div class="modal fade modal-styles " id="plantaTecnica" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="plantaTecnica" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header model-colors">
+                        <p class="fs-2" id="plantaTecnica">O que é planta baixa Técnica?</p>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <img src="img/img_painel_estilos.jpg" alt="">
+                      <div class="modal-body">
+                        <p class="fs-3 text-center text-consultoria">PLANTA BAIXA TÉCNICA</p>
+                      <h4 class="text-center h4-config ">representação do espaço em vista superior com medidas e detalhes técnicos.</h4>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn botao-modal" data-bs-dismiss="modal">Fechar</button>
+                    
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <li class="projcard-subtitle"><a class="opcoesconsultorias" aria-current="page" data-bs-toggle="modal" data-bs-target="#vistas" href="#">Vistas de cada parede</a></li>
+                <div class="modal fade modal-styles " id="vistas" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="vistas" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header model-colors">
+                        <p class="fs-2" id="vistas">O que são as vistas?</p>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <img src="img/img_painel_estilos.jpg" alt="">
+                      <div class="modal-body">
+                        <p class="fs-3 text-center text-consultoria">VISTAS</p>
+                      <h4 class="text-center h4-config ">demonstração de cada parede com informações de altura, dimensões e detalhamento de elementos importantes para o espaço.</h4>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn botao-modal" data-bs-dismiss="modal">Fechar</button>
+                    
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <li class="projcard-subtitle"><a class="opcoesconsultorias" aria-current="page" data-bs-toggle="modal" data-bs-target="#cortes" href="#">Cortes</a></li>
+                <div class="modal fade modal-styles " id="cortes" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="cortes" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header model-colors">
+                        <p class="fs-2" id="cortes">O que são cortes?</p>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <img src="img/img_painel_estilos.jpg" alt="">
+                      <div class="modal-body">
+                        <p class="fs-3 text-center text-consultoria">CORTES</p>
+                      <h4 class="text-center h4-config ">neste caso é feito uma linha imaginária estrategicamente posicionada cortando a área, dessa forma é representado 2 ou mais ambientes em um único corte.</h4>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn botao-modal" data-bs-dismiss="modal">Fechar</button>
+                    
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          
+              </ul> 
+            </div>
+            <div class="col-md-6">
+                <ul>
+                    <li class="projcard-subtitle"><a class="opcoesconsultorias" aria-current="page" href="#">Imagens realistas (render) </a></li>
+    <li class="projcard-subtitle"><a class="opcoesconsultorias" aria-current="page" href="#">Imagem 360</a></li>
+    <li class="projcard-subtitle"><a class="opcoesconsultorias" aria-current="page" href="#">Referências</a></li>
+    <li class="projcard-subtitle"><a class="opcoesconsultorias" aria-current="page" href="#">Vídeo chamada com a equipe</a></li>
+    <li class="projcard-subtitle"><a class="opcoesconsultorias" aria-current="page" href="#">Bônus: 1 alteração gratuita</a></li>
+                </ul>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
       <div class="card" id="sessao-3-sobre-nos">
         <div class="row" style="margin: 0;" >
           <div class="col-md-6 card-config">
@@ -181,361 +560,65 @@ $('#myModal').on('shown.bs.modal', function () {
             </p>
           </div>
           
-          <div id="sessao-2-testemunials">
-            <div class="demo">
-              <div class="container mt-3">
-                          <div id="testimonial-slider" class="owl-carousel">
-                              <div class="testimonial">
-                                  <span class="icon fa fa-quote-left"></span>
-                                  <p class="description">
-                                      "Nao tinha ideia alguma de design e após conhecer a OKA continuo nao tendo pois nao precisei ter! a OKA fez p mim"
-                                  </p>
-                                  <div class="testimonial-content">
-                                      <div class="pic"><img src="img/avatar_1.png" alt="" style="width: 100px;"></div>
-                                      <h3 class="title">Delciane</h3>
-                                      <span class="post">Web Developer</span>
-                                  </div>
-                              </div>
-                              <div class="testimonial">
-                                  <span class="icon fa fa-quote-left"></span>
-                                  <p class="description">
-                                    "Encontrei a OKA no momento em que eu mais precisava e a minha vida mudou"
-                                  </p>
-                                  <div class="testimonial-content">
-                                      <div class="pic"><img src="img/avatar_2.png" alt="" style="width: 100px;"></div>
-                                      <h3 class="title">Avril</h3>
-                                      <span class="post">Web Designer</span>
-                                  </div>
-                              </div>
-                              <div class="testimonial">
-                                  <span class="icon fa fa-quote-left"></span>
-                                  <p class="description">
-                                  "Todas as casas que eu tenho foram feitas pela OKA desde a planta até o design dos comodos"
-                                  </p>
-                                  <div class="testimonial-content">
-                                      <div class="pic"><img src="img/avatar_4.png" alt="" style="width: 100px;"></div>
-                                      <h3 class="title">Lavigne</h3>
-                                      <span class="post">Web Developer</span>
-                                  </div>
-                              </div>
-                              <div class="testimonial">
-                                <span class="icon fa fa-quote-left"></span>
-                                <p class="description">
-                                  "ótimos profissionais, deram total atençao e auxilio durante todo o processo do serviço oferecido, voltarei sempre"
-                                <div class="testimonial-content">
-                                    <div class="pic"><img src="img/avatar_4.png" alt="" style="width: 100px;"></div>
-                                    <h3 class="title">Steve</h3>
-                                    <span class="post">Web Developer</span>
-                                </div>
-                            </div>
-                            <div class="testimonial">
-                              <span class="icon fa fa-quote-left"></span>
-                              <p class="description">
-                                 Sou fora VINI #bbb2024
-                                 e fora Rodriguinho tambem
-                                 #tortura psicologica nao eh entretenimento!
-                              </p>
-                              <div class="testimonial-content">
-                                  <div class="pic"><img src="img/avatar_4.png" alt="" style="width: 100px;"></div>
-                                  <h3 class="title">Isabelle</h3>
-                                  <span class="post">Web Developer</span>
-                              </div>
-                          </div>
-                          <div class="testimonial">
-                            <span class="icon fa fa-quote-left"></span>
-                            <p class="description">
-                               Conheci a dona da OKA em uma rave e nunca pensei q uma friteira poderia fazer um trabalho tao bom como arquiteta!
-                            </p>
-                            <div class="testimonial-content">
-                                <div class="pic"><img src="img/avatar_4.png" alt="" style="width: 100px;"></div>
-                                <h3 class="title">Chanel</h3>
-                                <span class="post">Web Developer</span>
-                            </div>
-                        </div>
-                          </div>
-                      </div>
-                  </div>
-            
-        </div>
+          
         </div>
         </div>
          
       </div>
-    <div class="row d-flex justify-content-center" id="sessao-4-cards">
-      <p class="text-center p-config">QUAL COMBINA MAIS COM VOCÊ?</p>
-      <div id="card-1-sessao-2" class="col-md-3 justify-items-center text-center">
-        <div class="card-hover">
-          <div class="card-hover__content">
-            <h3 class="card-hover__title">
-              Serviços de <span>Consultorias e Projetos</span>
-            </h3>
-            <p class="card-hover__text">Nessa opção, você descobre pacotes exclusivos para transformar a decoração do seu espaço com autenticidade 
-              e conforto inspirado em você! Com nossos serviços, você pode transformar a sua casa em um espaço único e exclusivo.</p>
-            <a href="#" class="card-hover__link">
-              <span>Descubra mais</span>
-              <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-              </svg>        
-            </a>
-          </div>
-          <div class="card-hover__extra">
-            <h4>Oka <span>Arquitetura</span> sempre <span>com você!</span></h4>
-          </div>
-          <img src="img/card_2_header.jpg" alt="">
+    <div id="sessao-5-2-servicos">
+      <h1>RENDER E MODELAGEM 3D</h1>
+      <p>Voltado para escritórios de arquitetura, engenharia, marceneiros, projetistas e universitários em busca de serviços de visualização arquitetônica
+        para projetos autorais dos mesmos.
+      </p>
+      <div class="row">
+        <div class="col-md-4">
+          <ul>
+            <li>IMAGENS INTERNAS</li>
+            <li>IMAGENS EXTERNAS</li>
+            <li>VÍDEOS DE PERCURSO</li>
+            <li>IMAGENS 360</li>
+            <li>MODELAGEM 3D (solicite o orçamento)</li>
+          </ul>
         </div>
-      </div>
-      <div id="card-2-sessao-2" class="col-md-3">
-        <div class="card-hover">
-          <div class="card-hover__content">
-            <h3 class="card-hover__title">
-              Serviços para <span style=>Arquitetos e mais Profissionais</span>
-            </h3>
-            <p class="card-hover__text">Descubra os serviços projetuais que oferecemos para aprimorar o seu projeto! Desfrute de benefícios
-               como imagens renderizadas, vídeos e muito mais. </p>
-            <a href="#" class="card-hover__link">
-              <span>Descubra mais</span>
-              <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-              </svg>        
-            </a>
-          </div>
-          <div class="card-hover__extra">
-            <h4>Oka <span>Arquitetura</span> sempre <span>com você!</span></h4>
-          </div>
-          <img src="img/kitchen_image.jpg" alt="">
-        </div>
-      </div>
-   
-    </div> <!-- fechando a sessao 2 sobre nós-->
-    <div class="" id="sessao-3-como-funciona">
-      <div class="row" style="margin: 0;" >
-        <p class="text-center fs-1" style="color: #cc4b23; font-size: 30px; padding: 0; ">COMO FUNCIONA?
-        </p>
-        <div class="col-md-3 d-flex justify-content-center ">
-            <div class="cardHow text-center">
-              <img src="img/como-1.png" alt="" width="110px">
-              <div class="cardHow-details">
-                <p class="text-title fs-3 first-color">Selecione o perfil que melhor se alinha com suas necessidades e objetivos</p>
-                
-              </div>
-
-            </div>
-        </div>
-      
-        <div class="col-md-3 d-flex justify-content-center">
-          <div class="cardHow text-center">
-            <img src="img/como-2.png" alt="" width="110px">
-            <div class="cardHow-details">
-              <p class="text-title fs-3 first-color">Selecione o pacote mais adequado na seção abaixo</p>
-            </div>
-
+        <div class="col-md-8">
+          <div class="row justify-content-center">
+            <div class="col-md-4 d-flex justify-content-center">
+              <div class="card card-consultorias mb-5">
+                <div class="text-center" id="image-consultorias ">
+                  <img src="img/OKA_Simbolo_Terracota.png"
+                  width="150px" alt="">
+                </div>
+                <h1>VÍDEOS</h1>
+                <h2>(espaços internos e externos)</h2>
+                <div class="card-body">
+                  <h1>ATÉ 30seg.</h1>
+                  <h2>R$680,00</h2>
+                  <p>Receba em 03 dias úteis</p>
+                  <h1>Até 1min.</h1>
+                  <h2>R$1.000,00</h2>
+                  <p>Receba em até 05 dias úteis</p>
+                </div>
           </div>
         </div>
        
-        <div class="col-md-3 d-flex justify-content-center">
-          <div class="cardHow text-center">
-            <img src="img/como-3.png" alt="" width="110px">
-            <div class="cardHow-details">
-              <p class="text-title fs-3 first-color">Entre em contato conosco pelo WhatsApp e compartilhe suas informações conforme as orientações fornecidas.</p>
+        <div class="col-md-4 d-flex justify-content-center">
+          <div class="card card-consultorias mb-5">
+            <div class="text-center" id="image-consultorias ">
+              <img src="img/OKA_Simbolo_Terracota.png"
+              width="150px" alt="">
             </div>
+            <div class="card-body">
+              <h1>por ambiente</h1>
+              <h2>R$180,00</h2>
+              <p>Receba em 05 dias úteis incluso 01 alteração gratuita.</p>
            
-          </div>
-        </div>
-     
-        <div class="col-md-3 d-flex justify-content-center">
-          <div class="cardHow text-center">
-            <img src="img/como-4.png" alt="" width="110px">
-            <div class="cardHow-details">
-              <p class="text-title fs-3 first-color">Receba seu projeto e conte com nosso suporte pós-entrega para esclarecer dúvidas, 
-                realizar ajustes ou fornecer assistência contínua conforme necessário.</p>
-          
             </div>
-           
+      </div>
+    </div>
           </div>
         </div>
       </div>
-    </div>
-    <div id="sessao-5-servicos">
-      <p class="text-center p-config" style="color: #eddece; margin-bottom: 0;" >CONSULTORIAS</p>
-      <p class="text-center subtitle">Aqui estão nossos pacotes direcionados a quem deseja um novo visual para seu espaço.
-        Os pacotes foram dividos por nível de complexidade e detalhamento, escolha o ideal para você! </p>
-        <div class="row" >
-          <div class="col-md-4 d-flex justify-content-center ">
-            <div class="card card-consultorias mb-5">
-              <div class="text-center" id="image-consultorias ">
-                <img src="img/OKA_Simbolo_Terracota.png"
-                width="150px" alt="">
-              </div>
-              <div class="card-body">
-                <p class="fs-2">CONSULTORIA EXPRESS</p>
-                <p class="fs-3 text-center"> INCLUSO:</p>
-            <ul>
-              <li class="fs-4">
-                <a class="opcoesconsultorias" aria-current="page" href="#">Painel de estilos</a>
-              </li>
-              <li class="fs-4">
-                <a class="opcoesconsultorias" aria-current="page" href="#">Referências</a>
-              </li>
-              <li class="fs-4">
-                <a class="opcoesconsultorias" aria-current="page" href="#"> Vídeo chamada para apresentação com a equipe (1h) </a>
-               </li>
-              <li class="fs-4">
-                <a class="opcoesconsultorias" href="#"> Bônus: 1 alteração gratuita</a>
-              </li>
-            </ul>
-            
-              </div>
-              <div class="d-flex justify-content-center mt-3 mb-3">
-                <button type="button" class="btn botao-modal" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                  VER DETALHES
-                </button>
-              </div>
-             
-              <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h1 class="modal-title fs-5" id="staticBackdropLabel">Consultoria Express</h1>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                      <button type="button" class="btn btn-primary">Understood</button>
-                    </div>
-                  </div>
-                </div>
-              </div>    
-              </div>
-          </div>
-        <div class="col-md-4 d-flex justify-content-center">
-          <div class="card card-consultorias mb-5">
-            <div class="text-center" id="image-consultorias ">
-              <img src="img/OKA_Simbolo_Terracota.png"
-              width="150px" alt="">
-            </div>
-            <div class="card-body">
-              <p class="fs-2">CONSULTORIA PREMIUM</p>
-              <p class="fs-3 text-center"> INCLUSO:</p>
-          <ul>
-            <li class="fs-4"><a class="opcoesconsultorias" aria-current="page" data-bs-toggle="modal" data-bs-target="#painelEstilo" href="#">Painel de estilos</a></li>
-            <div class="modal fade modal-styles " id="painelEstilo" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="painelEstilo" aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header model-colors">
-                    <p class="fs-2" id="painelEstiloLabel">O que é painel de estilos?</p>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <img src="img/img_painel_estilos.jpg" alt="">
-                  <div class="modal-body">
-                    <p class="fs-3 text-center text-consultoria">PAINEL DE ESTILOS</p>
-                  <h4 class="text-center h4-config ">o painel de estilos é a combinação de referências visuais das preferências e personalidade do cliente.</h4>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn botao-modal" data-bs-dismiss="modal">Fechar</button>
-                
-                  </div>
-                </div>
-              </div>
-            </div>
-            <li class="fs-4"><a class="opcoesconsultorias" aria-current="page" href="#">Planta baixa - Layout e Técnica</a></li>
-            <li class="fs-4"><a class="opcoesconsultorias" aria-current="page" href="#">Vista de cada parede</a></li>
-            <li class="fs-4"><a class="opcoesconsultorias" aria-current="page" href="#">Cortes</a></li>
-            <li class="fs-4"><a class="opcoesconsultorias" aria-current="page" href="#">Imagens realistas (render) </a></li>
-            <li class="fs-4"><a class="opcoesconsultorias" aria-current="page" href="#">Imagem 360</a></li>
-            <li class="fs-4"><a class="opcoesconsultorias" aria-current="page" href="#">Referências</a></li>
-            <li class="fs-4"><a class="opcoesconsultorias" aria-current="page" href="#">Vídeo chamada para apresentação com a equipe (2h)</a></li>
-            <li class="fs-4"><a class="opcoesconsultorias" aria-current="page" href="#">Bônus: 1 alteração gratuita</a></li>
-          </ul>
-          
-            </div>
-            <div class="d-flex justify-content-center mt-3 mb-3">
-              <button type="button" class="btn botao-modal" data-bs-toggle="modal" data-bs-target="#staticBackdroppp">
-                VER DETALHES
-              </button>
-            </div>
-            <div class="modal fade" id="staticBackdroppp" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="staticBackdropppLabel">Consultoria Premium</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                    <button type="button" class="btn btn-primary">Entendir</button>
-                  </div>
-                </div>
-              </div>
-            </div> 
-            </div>
-        </div>
-        <div class="col-md-4 d-flex justify-content-center">
-          <div class="card card-consultorias mb-5">
-            <div class="text-center" id="image-consultorias ">
-              <img src="img/OKA_Simbolo_Terracota.png"
-              width="150px" alt="">
-            </div>
-            <div class="card-body">
-              <p class="fs-2">SERVIÇOS ADICIONAIS</p>
-              <p class="fs-3 text-center"> INCLUSO:</p>
-          <ul>
-            <li class="fs-4"><a class="opcoesconsultorias" aria-current="page" href="#">Detalhamento de marcenaria</a></li>
-            <li class="fs-4"><a class="opcoesconsultorias" aria-current="page" href="#">Ponto de iluminação</a></li>
-            <li style="font-size: 22px;"><a class="opcoesconsultorias" aria-current="page" href="#">Pontos elétricos</a></li>
-            <li class="fs-4"><a class="opcoesconsultorias" data-bs-toggle="modal" data-bs-target="#staticBackHidri" href="#">Pontos hidraúlicos</a></li>
-              
-            <div class="modal fade" id="staticBackHidri" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackHidri" aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="staticBackHidriLabel">O que são pontos hidraúlicos?</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <img src="img/arquitetura-6.jpg" alt="">
-                  <div class="modal-body">
-                    <h1 class="text-center fs-2">Pontos hidraúlicos</h1>
-                    <p></p>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                
-                  </div>
-                </div>
-              </div>
-            </div>
-          </ul>
-            </div>
-            <div class="d-flex justify-content-center mt-3 mb-3">
-              <button type="button" class="btn botao-modal" data-bs-toggle="modal" data-bs-target="#staticBackdropp">
-                VER DETALHES
-              </button>
-            </div>
-           
-            <div class="modal fade" id="staticBackdropp" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdroppLabel" aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="staticBackdroppLabel">Serviços adicionais</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                    <button type="button" class="btn btn-primary">Entendir</button>
-                  </div>
-                </div>
-              </div>
-            </div> 
-            </div>
-        </div>
-
-        </div>
-    </div>
+     
     <div id="sessao-6-footer">
 <footer class="text-center text-lg-start bg-body-tertiary text-muted">
   <!-- Section: Social media -->
@@ -586,7 +669,7 @@ $('#myModal').on('shown.bs.modal', function () {
           </p>
           <p>
             <a href="#!" class="text-reset">COMO FUNCIONA</a>
-          </p>
+          </0p>
           <p>
             <a href="#!" class="text-reset">SERVIÇOS</a>
           </p>
