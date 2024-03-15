@@ -8,7 +8,8 @@ body {
 }
 .card-consultorias {
   border: 2px solid #ddd;
-
+  max-width: 1400px; 
+  height: 400px; 
   overflow: hidden;
   cursor: pointer;
   box-shadow: 0 4px 21px -12px rgba(0, 0, 0, .66);
@@ -73,6 +74,16 @@ body {
   position: relative;
 }
 
+.title-cards {
+  font-size: 30px;
+  color: #eddece;
+}
+li {
+  color: #eddece;
+}
+.subtitle-card {
+  color: #eddece;
+}
 
 h1 {
     font-family: "Plein";
