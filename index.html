@@ -15,32 +15,14 @@
     <link rel="stylesheet" href="css/mdb.min.css" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="teste.css">
-    <link rel="stylesheet" href="testetwo.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
   </head>
-  <script>
-    document.querySelectorAll(".projcard-description").forEach(function(box) {
-  $clamp(box, {clamp: 6});
-});
-    $(document).ready(function(){
-  $("#testimonial-slider").owlCarousel({
-      items:3,
-      itemsDesktop:[1000,3],
-      itemsDesktopSmall:[979,2],
-      itemsTablet:[768,2],
-      itemsMobile:[650,1],
-      pagination:true,
-      autoPlay:true
-  });
-});
-$('#myModal').on('shown.bs.modal', function () {
-  $('#myInput').trigger('focus')
-})
-  </script>
+
   <body style="background-color: #eddece;">
     <a class="whatsapp-link" href="https://web.whatsapp.com/send?phone=5592981421867" target="_blank">
       <i class="fa fa-whatsapp"></i>
@@ -110,7 +92,7 @@ $('#myModal').on('shown.bs.modal', function () {
     <div id="sessao-5-servicos">
       <div class="p-config text-center"> CONSULTORIAS</div>
       <p class="text-center fs-3 " style="margin: 0; color: #CC4B23;" >aqui uma intro e vou mostrar todos os pacotes e tals</p>
-      <div class="card mb-3 card-consultorias hvr-grow ms-5 mt-5 " >
+      <div class="card mb-3 card-consultorias hvr-grow ms-4 mt-5 me-4" >
         <div class="row g-0" style="margin: 0;" >
           <div class="col-md-4 d-flex justify-content-start">
             <img class="rounded-4 clips"
@@ -120,62 +102,52 @@ $('#myModal').on('shown.bs.modal', function () {
           </div>
           <div class="col-md-8 ">
             <div class="card-body">
-              <div class="row">
-                <div class="col-md-6" style="height: 200px;" >     
+             
                 <div class="title-cards">CONSULTORIAS EXPRESS</div>
                 <div class="projcard-subtitle">Para pessoas q querem ter uma consultoria express sabe</div>
                 <div class="projcard-bar hvr-grow "></div>
-              <div class="fs-2 subtitle-card ">INCLUSO:</div> </div>
-                <div class="col-md-6">
-                  <img src="img/OKA_Simbolo_Sand.png" alt=""  >
-                </div>
-              </div>
-          
-           <div class="row">
-            <div class="col-md-6">
+              <div class="fs-2 subtitle-card ">INCLUSO:</div>
+      
               <ul>
-                <li class="fs-4"><a class="opcoesconsultorias" aria-current="page" href="#">Painel de estilos</a></li>
-                <div class="modal fade modal-styles " id="painelEstilo" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="painelEstilo" aria-hidden="true">
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <div class="modal-header model-colors">
-                        <p class="fs-2" id="painelEstiloLabel">O que é painel de estilos?</p>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                      <img src="img/img_painel_estilos.jpg" alt="">
-                      <div class="modal-body">
-                        <p class="fs-3 text-center text-consultoria">PAINEL DE ESTILOS</p>
-                      <h4 class="text-center h4-config ">o painel de estilos é a combinação de referências visuais das preferências e personalidade do cliente.</h4>
-                      </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn botao-modal" data-bs-dismiss="modal">Fechar</button>
-                    
-                      </div>
-                    </div>
-                  </div>
-                </div>
-<li class="fs-4"><a class="opcoesconsultorias" aria-current="page" data-bs-toggle="modal" data-bs-target="#referencias" > Referências </a></li>
-          
-<li class="fs-4"><a class="opcoesconsultorias" aria-current="page" data-bs-toggle="modal" data-bs-target="#videocall" >Vídeo chamada com a equipe (2h)</a></li>
-       
-                <li class="fs-4"><a class="opcoesconsultorias" aria-current="page" data-bs-toggle="modal" data-bs-target="#alteracao">1 alteração gratuita</a></li>
+                <li class="fs-4"><a class="opcoesconsultorias" aria-current="page" data-bs-toggle="modal" data-bs-target="#painelEstilo" >Painel de estilos</a>
+             
+                  
+                </li>
+         
 
               </ul>
-            </div>
-            <div class="col-md-6">
-    
-           </div>
+       
+     
               </div>
-             
+              <div class=" d-flex justify-content-center mt-4 mb-2 ">
+                <button class="botao-modal"> QUERO CONTRATAR </button>
+               </div>   
             </div>
-            <div class=" d-flex justify-content-start mt-4 ">
-              <button class="botao-modal"> QUERO CONTRATAR </button>
-             </div>
+        
             </div>
             
           </div>
+          <div class="modal fade modal-styles " id="painelEstilo" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="painelEstilo" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header model-colors">
+                  <p class="fs-2" id="painelEstiloLabel">O que é painel de estilos?</p>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <img src="img/img_painel_estilos.jpg" alt="">
+                <div class="modal-body">
+                  <p class="fs-3 text-center text-consultoria">PAINEL DE ESTILOS</p>
+                <h4 class="text-center h4-config ">o painel de estilos é a combinação de referências visuais das preferências e personalidade do cliente.</h4>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn botao-modal" data-bs-dismiss="modal">Fechar</button>
+              
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="card mb-3 card-consultorias hvr-grow ms-5 mt-5 " >
+          </div>
+          <div class="card mb-3 card-consultorias hvr-grow  ms-4 mt-5 me-4 " >
             <div class="row g-0" style="margin: 0;" >
               <div class="col-md-4 d-flex justify-content-start">
                 <img class="rounded-4 clips"
@@ -193,111 +165,22 @@ $('#myModal').on('shown.bs.modal', function () {
                 <div class="col-md-6">
                   <ul>
                     <li class="fs-4"><a class="opcoesconsultorias" aria-current="page" href="#">Painel de estilos</a></li>
-                    <div class="modal fade modal-styles " id="painelEstilo" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="painelEstilo" aria-hidden="true">
-                      <div class="modal-dialog">
-                        <div class="modal-content">
-                          <div class="modal-header model-colors">
-                            <p class="fs-2" id="painelEstiloLabel">O que é painel de estilos?</p>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                          </div>
-                          <img src="img/img_painel_estilos.jpg" alt="">
-                          <div class="modal-body">
-                            <p class="fs-3 text-center text-consultoria">PAINEL DE ESTILOS</p>
-                          <h4 class="text-center h4-config ">o painel de estilos é a combinação de referências visuais das preferências e personalidade do cliente.</h4>
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn botao-modal" data-bs-dismiss="modal">Fechar</button>
-                        
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+  
                     <li class="fs-4"><a class="opcoesconsultorias" aria-current="page" data-bs-toggle="modal" data-bs-target="#plantaLayout" > Planta baixa - Layout </a></li>
-                    <div class="modal fade modal-styles " id="plantaLayout" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="plantaLayout" aria-hidden="true">
-                      <div class="modal-dialog">
-                        <div class="modal-content">
-                          <div class="modal-header model-colors">
-                            <p class="fs-2" id="plantaLayout">O que é planta baixa de Layout?</p>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                          </div>
-                          <img src="img/img_painel_estilos.jpg" alt="">
-                          <div class="modal-body">
-                            <p class="fs-3 text-center text-consultoria">PLANTA BAIXA LAYOUT</p>
-                          <h4 class="text-center h4-config ">Representação do espaço em vista superior, possibilitando a visualização de fluxos e disposição de móveis no ambiente.</h4>
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn botao-modal" data-bs-dismiss="modal">Fechar</button>
-                        
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+              
                     <li class="fs-4"><a class="opcoesconsultorias" aria-current="page" data-bs-toggle="modal" data-bs-target="#plantaTecnica" > Planta baixa - Técnica</a></li>
-                    <div class="modal fade modal-styles " id="plantaTecnica" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="plantaTecnica" aria-hidden="true">
-                      <div class="modal-dialog">
-                        <div class="modal-content">
-                          <div class="modal-header model-colors">
-                            <p class="fs-2" id="plantaTecnica">O que é planta baixa Técnica?</p>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                          </div>
-                          <img src="img/img_painel_estilos.jpg" alt="">
-                          <div class="modal-body">
-                            <p class="fs-3 text-center text-consultoria">PLANTA BAIXA TÉCNICA</p>
-                          <h4 class="text-center h4-config ">representação do espaço em vista superior com medidas e detalhes técnicos.</h4>
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn botao-modal" data-bs-dismiss="modal">Fechar</button>
-                        
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+    
                     <li class="fs-4"><a class="opcoesconsultorias" aria-current="page" data-bs-toggle="modal" data-bs-target="#vistas">Vistas de cada parede</a></li>
-                    <div class="modal fade modal-styles " id="vistas" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="vistas" aria-hidden="true">
-                      <div class="modal-dialog">
-                        <div class="modal-content">
-                          <div class="modal-header model-colors">
-                            <p class="fs-2" id="vistas">O que são as vistas?</p>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                          </div>
-                          <img src="img/img_painel_estilos.jpg" alt="">
-                          <div class="modal-body">
-                            <p class="fs-3 text-center text-consultoria">VISTAS</p>
-                          <h4 class="text-center h4-config ">demonstração de cada parede com informações de altura, dimensões e detalhamento de elementos importantes para o espaço.</h4>
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn botao-modal" data-bs-dismiss="modal">Fechar</button>
-                        
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+      
                     <li class="fs-4"><a class="opcoesconsultorias" aria-current="page" data-bs-toggle="modal" data-bs-target="#cortes">Cortes</a></li>
-                    <div class="modal fade modal-styles " id="cortes" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="cortes" aria-hidden="true">
-                      <div class="modal-dialog">
-                        <div class="modal-content">
-                          <div class="modal-header model-colors">
-                            <p class="fs-2" id="cortes">O que são cortes?</p>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                          </div>
-                          <img src="img/img_painel_estilos.jpg" alt="">
-                          <div class="modal-body">
-                            <p class="fs-3 text-center text-consultoria">CORTES</p>
-                          <h4 class="text-center h4-config ">neste caso é feito uma linha imaginária estrategicamente posicionada cortando a área, dessa forma é representado 2 ou mais ambientes em um único corte.</h4>
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn botao-modal" data-bs-dismiss="modal">Fechar</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+         
                   </ul>
                 </div>
                 <div class="col-md-6">
                  
                   <ul>
                     <li class="fs-4"><a class="opcoesconsultorias" aria-current="page" data-bs-toggle="modal" data-bs-target="#renderimg">Imagens realistas (render)</a></li>
-                    <li class="fs-4"><a class="opcoesconsultorias" aria-current="page" data-bs-toggle="modal" data-bs-target="#imagemtrezentos">Imagem 360</a></li>
+                    <li class="fs-4"><a class="opcoesconsultorias" aria-current="page" data-bs-toggle="modal" data-bs-target="#servicosadicionais">Serviços adicionais aj modal</a></li>
                     <li class="fs-4"><a class="opcoesconsultorias" aria-current="page" data-bs-toggle="modal" data-bs-target="#referenciaspremium">Referências</a></li>
                     <li class="fs-4"><a class="opcoesconsultorias" aria-current="page" data-bs-toggle="modal" data-bs-target="#videochat">Vídeo chamada com a equipe (2h)</a></li>
                     <li class="fs-4"><a class="opcoesconsultorias" aria-current="page" data-bs-toggle="modal" data-bs-target="#bonus">Bônus: 1 alteração gratuita</a></li>
@@ -307,185 +190,228 @@ $('#myModal').on('shown.bs.modal', function () {
                </div>
               
                   </div>
-                  <div class=" d-flex justify-content-start" >
-                    <button class="botao-modal " > QUERO CONTRATAR </button>
-                   </div>
+                  <div class=" d-flex justify-content-center mt-4 mb-2 ">
+                    <button class="botao-modal"> QUERO CONTRATAR </button>
+                   </div>   
+                </div>
                 </div>
                 
                 </div>
                 
               </div>
        
-   
-    <div class="card mb-3 card-consultorias hvr-grow ms-5 ">
-      <div class="row">
-  
-        <div class="col-md-8 ">
-          <div class="card-body  ">
-            <div class="title-cards d-flex justify-content-end " style="margin-right: 95px;" >SERVIÇOS ADICIONAIS</div>
-            <div class="projcard-subtitle d-flex justify-content-end ">Para pessoas q querem ter uma consultoria premium sabe</div>
-            <div class="bordadinho"></div>
-            <div class="fs-2 subtitle-card  d-flex justify-content-center" style="margin-left: 150px;" >INCLUSO:</div>
-          <ul> 
-            <div style="margin-left: 470px;" >
-              <li class="fs-4 "><a class="opcoesconsultorias" aria-current="page" href="#">Detalhamento de marcenaria</a></li>
-              <li class="fs-4"><a class="opcoesconsultorias" aria-current="page" href="#">Ponto de iluminação</a></li>
-              <li class="fs-4"><a class="opcoesconsultorias" aria-current="page" href="#">Pontos elétricos</a></li>
-              <li class="fs-4"><a class="opcoesconsultorias" data-bs-toggle="modal" data-bs-target="#staticBackHidri" href="#">Pontos hidraúlicos</a></li>
-            </div>
-           
-              
-            <div class="modal fade" id="staticBackHidri" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackHidri" aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="staticBackHidriLabel">O que são pontos hidraúlicos?</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <img src="img/arquitetura-6.jpg" alt="">
-                  <div class="modal-body">
-                    <h1 class="text-center fs-2">Pontos hidraúlicos</h1>
-                    <p></p>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                
-                  </div>
+
+    <div id="sessao-5-2-renderizacao">
+      <div class="p-config text-center"> RENDERIZAÇÃO E MODELAGEM 3D </div>
+      <p class="text-center fs-3 " style="margin: 0; color: #CC4B23;" >aqui uma intro e vou mostrar todos os pacotes e tals</p>
+     
+      <div class="card mb-3 card-consultorias hvr-grow  ms-4 mt-5 me-4" >
+        <div class="row g-0" style="margin: 0;" >
+          <div class="col-md-4 d-flex justify-content-start">
+            <img class="rounded-4 clips"
+            height="4"
+              src="img/card_consultorias_express.jpeg"
+              />
+          </div>
+          <div class="col-md-8 ">
+            <div class="card-body">
+             
+                <div class="title-cards">IMAGENS INTERNAS</div>
+                <div class="projcard-subtitle">veja imagens de indentro</div>
+                <div class="projcard-bar hvr-grow "></div>
+              <div class="fs-2 subtitle-card d-flex justify-content-center ">PACOTES:</div>
+              <div class="row">
+                <div class="col-md-3 col-pacotes">
+                  
+                    <a class="opcoesrender fs-1 d-flex justify-content-center" aria-current="page" href="#">01 UN.</a>
+                  
+                  <p class="opcoesrender fs-2 d-flex justify-content-center ">R$115,00</p>
+                  <p class="opcoesrender renderdias">*Receba em 03 dias úteis</p>
+                  <p class="opcoesrender renderdias">*01 alteração grátis </p>
+                   
+               
+                </div>
+                <div class="col-md-3 col-pacotes">
+                  <a class="opcoesrender fs-1 " aria-current="page" href="#">03 UN.</a>
+                  
+                  <p class="opcoesrender desconto fs-4" style="text-decoration: line-through;" > R$345,00 <p class="opcoesrender fs-4">por</p>  <p class="opcoesrender fs-2">R$240,00</p> </p>
+                  
+                  <p class="opcoesrender renderdias">*Receba em 05 dias úteis</p>
+                  <p class="opcoesrender renderdias">*01 alteração grátis </p>
+                  <p class="opcoesrender renderdias">*Economize 30% </p>
+                  
+                </div>
+                <div class="col-md-3 col-pacotes">
+                  <a class="opcoesrender fs-1 " aria-current="page" href="#">05 UN.</a>
+                  
+                  <p class="opcoesrender desconto fs-4" style="text-decoration: line-through;" > R$575,00 <p class="opcoesrender fs-4">por</p>  <p class="opcoesrender fs-2">R$370,00</p> </p>
+
+                  <p class="opcoesrender renderdias">*Receba em 07 úteis</p>
+                  <p class="opcoesrender renderdias">*01 alteração grátis </p>
+                  <p class="opcoesrender renderdias">*Economize 35% </p>               
+               
+                </div>
+                <div class="col-md-3 col-pacotes">
+                  <a class="opcoesrender fs-1 " aria-current="page" href="#">10 UN.</a>
+                  <p class="opcoesrender desconto fs-4" style="text-decoration: line-through;" > R$1.150,00 <p class="opcoesrender fs-4">por</p>  <p class="opcoesrender fs-2">R$690,00</p> </p>
+
+                  <p class="opcoesrender renderdias">*Receba em 10 dias úteis</p>
+                  <p class="opcoesrender renderdias">*01 alteração grátis </p>
+                  <p class="opcoesrender renderdias">*Economize 40% </p>
+
+
+               
+               
                 </div>
               </div>
+       
+              <div class=" d-flex justify-content-center mt-4 ">
+                <button class="botao-modal"> QUERO CONTRATAR </button>
+               </div>
+              </div>
+                  
             </div>
-          </ul>
+        
             </div>
-
-          </div>
-          <div class="col-md-4 d-flex justify-content-end">
-            <img class="projcard-img-left rounded-4 clips-left " src="img/card_servicos_adc.jpeg" style="height: 400px;" />
             
           </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="card" id="sessao-3-sobre-nos">
-        <div class="row" style="margin: 0;" >
-          <div class="col-md-6 card-config">
-            <div class="card-body card-config">
-              <h5 class="card-title fs-1 text-center text-config">SOBRE NÓS</h5>
-              <p class="text-center fs-3 text-config">Somos uma empresa especializada em arquitetura e design de interiores, dedicada a transformar sonhos, vivências e experiências em ambientes projetados de maneira exclusiva e personalizada. Oferecemos serviços de consultoria e projetos
-                 de interiores tanto para aprimorar o seu espaço como para colaborar com profissionais da área de arquitetura em busca de soluções projetuais inovadoras.</p>
-            </div>
-            <div class="col-md-10 card-config ms-5">
-              <div id="carouselMaterialStyle" class="carousel slide carousel-fade " data-mdb-ride="carousel" data-mdb-carousel-init>
-                <div class="carousel-indicators">
-                  <button type="button" data-mdb-target="#carouselMaterialStyle" data-mdb-slide-to="0" class="active" aria-current="true"
-                    aria-label="Slide 1"></button>
-                  <button type="button" data-mdb-target="#carouselMaterialStyle" data-mdb-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-mdb-target="#carouselMaterialStyle" data-mdb-slide-to="2" aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner rounded-5 shadow-4-strong mt-3  mb-3 w-full ">
-                  <div class="carousel-item active ">
-                    <img src="img/carousel-1-mid.jpg" class="d-block w-100"
-                      alt="Sunset Over the City" />
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5></h5>
-                      <p></p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img src="img/carousel-6-mid.jpg" class="d-block w-100"
-                      alt="Canyon at Nigh" />
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5></h5>
-                      <p></p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img src="img/carousel-4-mid.jpg" class="d-block w-100"
-                      alt="Cliff Above a Stormy Sea" />
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5></h5>
-                      <p></p>
-                    </div>
-                  </div>
-                </div>
-    
+          <div class="card mb-3 card-consultorias hvr-grow ms-4 mt-5 me-4 " >
+            <div class="row g-0" style="margin: 0;" >
+              <div class="col-md-4 d-flex justify-content-start">
+                <img class="rounded-4 clips"
+                  src="img/card_consultorias_express.jpeg"
+                  />
+                  
               </div>
-          </div>
-        </div>
-        <div class="col-md-6 card-body card-config" style="padding: 0;">
-          <div class="card-body card-config">
-            <h5 class="card-title fs-1 text-center text-config">POR QUE CONTRATAR A OKA?</h5>
-            <p class="text-center fs-3 text-config">
-              Nossa arquitetura é para todos! Aqui você tem acesso a serviços totalmente online, de qualidade
-              e economicamente acessível a sua realidade. A OKA preza por levar transformação de espaços
-              e sensação de pertencimento aonde quer que você esteja. Ainda não lhe convencemos? Tudo bem! colhemos alguns testemunhos de clientes que contratam e estão satisfeitos com os resultados de nossos serviços:
-            </p>
-          </div>
-          
-          
-        </div>
-        </div>
-         
-      </div>
-    <div id="sessao-5-2-servicos">
-      <h1>RENDER E MODELAGEM 3D</h1>
-      <p>Voltado para escritórios de arquitetura, engenharia, marceneiros, projetistas e universitários em busca de serviços de visualização arquitetônica
-        para projetos autorais dos mesmos.
-      </p>
-      <div class="row">
-        <div class="col-md-4">
-          <ul>
-            <li>IMAGENS INTERNAS</li>
-            <li>IMAGENS EXTERNAS</li>
-            <li>VÍDEOS DE PERCURSO</li>
-            <li>IMAGENS 360</li>
-            <li>MODELAGEM 3D (solicite o orçamento)</li>
-          </ul>
-        </div>
-        <div class="col-md-8">
-          <div class="row justify-content-center">
-            <div class="col-md-4 d-flex justify-content-center">
-              <div class="card card-consultorias mb-5">
-                <div class="text-center" id="image-consultorias ">
-                  <img src="img/OKA_Simbolo_Terracota.png"
-                  width="150px" alt="">
-                </div>
-                <h1>VÍDEOS</h1>
-                <h2>(espaços internos e externos)</h2>
+              <div class="col-md-8 ">
                 <div class="card-body">
-                  <h1>ATÉ 30seg.</h1>
-                  <h2>R$680,00</h2>
-                  <p>Receba em 03 dias úteis</p>
-                  <h1>Até 1min.</h1>
-                  <h2>R$1.000,00</h2>
-                  <p>Receba em até 05 dias úteis</p>
-                </div>
-          </div>
-        </div>
-       
-        <div class="col-md-4 d-flex justify-content-center">
-          <div class="card card-consultorias mb-5">
-            <div class="text-center" id="image-consultorias ">
-              <img src="img/OKA_Simbolo_Terracota.png"
-              width="150px" alt="">
-            </div>
-            <div class="card-body">
-              <h1>por ambiente</h1>
-              <h2>R$180,00</h2>
-              <p>Receba em 05 dias úteis incluso 01 alteração gratuita.</p>
-           
-            </div>
-      </div>
+                 
+                    <div class="title-cards">IMAGENS EXTERNAS</div>
+                    <div class="projcard-subtitle">veja imagens de fora</div>
+                    <div class="projcard-bar hvr-grow "></div>
+                    <div class="fs-2 subtitle-card d-flex justify-content-center ">PACOTES:</div>
+    
+                  <div class="row">
+                    <div class="col-md-3 col-pacotes">
+                      
+                        <a class="opcoesrender fs-1 d-flex justify-content-center" aria-current="page" href="#">01 UN.</a>
+                      
+                      <p class="opcoesrender fs-2 d-flex justify-content-center ">R$120,00</p>
+                      <p class="opcoesrender renderdias">*Receba em 03 dias úteis</p>
+                      <p class="opcoesrender renderdias">*01 alteração grátis </p>
+                       
+                   
+                    </div>
+                    <div class="col-md-3 col-pacotes">
+                      <a class="opcoesrender fs-1 d-flex justify-content-center" aria-current="page" href="#">02 UN.</a>
+                      
+                      <p class="opcoesrender desconto fs-4 d-flex justify-content-center" style="text-decoration: line-through;" > R$240,00 <p class="d-flex justify-content-center opcoesrender fs-4">por</p>  <p class="d-flex justify-content-center opcoesrender fs-2">R$204,00</p> </p>
+
+                      <p class="opcoesrender renderdias">*Receba em 05 dias úteis</p>
+                      <p class="opcoesrender renderdias">*01 alteração grátis </p>
+                      <p class="opcoesrender renderdias">*Economize 15% </p>
+                      
+                    </div>
+                    <div class="col-md-3 col-pacotes">
+                      <a class="opcoesrender fs-1 d-flex justify-content-center" aria-current="page" href="#">03 UN.</a>
+                      
+                      <p class="opcoesrender desconto fs-4 d-flex justify-content-center" style="text-decoration: line-through;" > R$360,00 <p class="opcoesrender d-flex justify-content-center fs-4">por</p>  <p class="opcoesrender d-flex justify-content-center fs-2">R$250,00</p> </p>
+
+                      <p class="opcoesrender renderdias">*Receba em 07 dias úteis</p>
+                      <p class="opcoesrender renderdias">*01 alteração grátis </p>
+                      <p class="opcoesrender renderdias">*Economize 30% </p>               
+                   
+                    </div> 
+                    <div class="col-md-3 col-pacotes">
+                      <a class="opcoesrender fs-1 d-flex justify-content-center " aria-current="page" href="#">05 UN.</a>
+                      <p class="opcoesrender desconto fs-4 d-flex justify-content-center" style="text-decoration: line-through;" > R$600,00 <p class="opcoesrender d-flex justify-content-center fs-4">por</p>  <p class="d-flex justify-content-center opcoesrender fs-2">R$390,00</p> </p>
+                      <p class="opcoesrender renderdias">*Receba em 10 dias úteis</p>
+                      <p class="opcoesrender renderdias">*01 alteração grátis </p>
+                      <p class="opcoesrender renderdias">*Economize 35% </p>
+                 
+                   
+                    </div>
+                  </div>
+               
+             
+                      </div>
+                      <div class=" d-flex justify-content-center mt-4 mb-2 ">
+                        <button class="botao-modal"> QUERO CONTRATAR </button>
+                       </div>   
+                    </div>
+                
+                    </div>
+                    
+                  </div>
+                  <div class="card mb-3 card-consultorias hvr-grow ms-4 mt-5 me-4 " >
+                    <div class="row g-0" style="margin: 0;" >
+                      <div class="col-md-4 d-flex justify-content-start">
+                        <img class="rounded-4 clips"
+                          src="img/card_consultorias_express.jpeg"
+                          />
+                          
+                      </div>
+                      <div class="col-md-8 ">
+                        <div class="card-body">
+                         
+                            <div class="title-cards">VÍDEOS</div>
+                            <div class="projcard-subtitle">veja videos de indentro e de fora</div>
+                            <div class="projcard-bar hvr-grow "></div>
+                            <div class="fs-2 subtitle-card d-flex justify-content-center ">PACOTES:</div>
+            
+                          <div class="row">
+                            <div class="col-md-3 col-pacotes">
+                              
+                                <a class="opcoesrender fs-1 d-flex justify-content-center" aria-current="page" href="#">Até 30seg.</a>
+                              
+                              <p class="opcoesrender fs-2 d-flex justify-content-center ">R$680,00</p>
+                              <p class="opcoesrender renderdias">*Receba em até 3 dias úteis</p>
+               
+                               
+                           
+                            </div>
+                            <div class="col-md-3 col-pacotes">
+                              <a class="opcoesrender fs-1 d-flex justify-content-center" aria-current="page" href="#">Até 1min.</a>
+                              
+                              <p class="opcoesrender fs-4 d-flex justify-content-center" >R$1.000,00</p>
+        
+                              <p class="opcoesrender renderdias">*Receba em 05 dias úteis</p>
+                             
+                              
+                            </div>
+                            <div class="col-md-3 col-pacotes">
+                              <a class="opcoesrender fs-1 d-flex justify-content-center" aria-current="page" href="#">Até 2min.</a>
+                              
+                              <p class="opcoesrender fs-4 d-flex justify-content-center">R$1.800,00</p>
+        
+                              <p class="opcoesrender renderdias">*Receba em 07 dias úteis</p>
+              
+                            </div> 
+                            <div class="col-md-3 col-pacotes">
+                              <a class="opcoesrender fs-1 d-flex justify-content-center " aria-current="page" href="#">Por ambiente</a>
+                              <p class="opcoesrender desconto fs-4 d-flex justify-content-center">R$180,00</p>
+                              <p class="opcoesrender renderdias">*Receba em 05 dias úteis</p>
+                              <p class="opcoesrender renderdias">*01 alteração grátis </p>
+                          
+                            </div>
+                          </div>
+                       
+                     
+                              </div>
+                              <div class=" d-flex justify-content-center mt-4 mb-2 ">
+                                <button class="botao-modal"> QUERO CONTRATAR </button>
+                               </div>   
+                            </div>
+                        
+                            </div>
+                            
+                          </div>
     </div>
-          </div>
-        </div>
-      </div>
-     
     <div id="sessao-6-footer">
 <footer class="text-center text-lg-start bg-body-tertiary text-muted">
-  <!-- Section: Social media -->
+
   <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-    <!-- Left -->
+  
     <div class="me-5 d-none d-lg-block">
       <span>Entre em contato pelas redes sociais:</span>
     </div>
@@ -507,11 +433,11 @@ $('#myModal').on('shown.bs.modal', function () {
 
   <section class="sessao-footer">
     <div class="container text-center text-md-start mt-5">
-      <!-- Grid row -->
+
       <div class="row mt-3">
-        <!-- Grid column -->
+    
         <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-          <!-- Content -->
+   
           <h6 class="text-uppercase fw-bold mb-4">
             <i class="fas fa-gem me-3"></i>OKA ARQUITETURA
           </h6>
@@ -557,6 +483,13 @@ $('#myModal').on('shown.bs.modal', function () {
     </div> <!-- aqui fecha o container fluid-->
     <script type="text/javascript" src="js/mdb.umd.min.js"></script>
     <script type="text/javascript"></script>
-
+    <script>
+      const myModal = document.getElementById('myModal')
+      const myInput = document.getElementById('myInput')
+      
+      myModal.addEventListener('shown.bs.modal', () => {
+        myInput.focus()
+      })
+        </script>
   </body>
 </html>
