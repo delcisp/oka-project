@@ -119,6 +119,15 @@ h1 {
 a, .card {
     font-family: "Plein";
 }
+.navbar-items {
+  color: #CC4B23;
+
+}
+
+#frase-inicial-first {
+  color: #eddece;
+  font-size: 40px;
+}
 
 #sessao-4-cards {
   margin: 0;
@@ -179,7 +188,7 @@ a, .card {
   height: 60px;
   bottom: 40px;
   right: 40px;
-  background-color: #d3b2d4;
+  background-color: #eddece;
   color: #fff ;
   border-radius: 50px;
   text-align: center;
