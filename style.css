@@ -1,11 +1,31 @@
-body {
-    background-color: #eddece;
-    font-family: "Plein";
+@font-face {
+  font-family: 'Plein-Bold';
+  src: url('resources/Fonte/Fonts/WEB/fonts/Plein-Bold.woff2') format('woff2'),
+       url('resources/Fonte/Fonts/WEB/fonts/Plein-Bold.woff') format('woff'),
+       url('resources/Fonte/Fonts/WEB/fonts/Plein-Bold.ttf') format('truetype');
+       font-weight: 700;
+       font-display: swap;
+       font-style: normal;
+}
+@font-face {
+  font-family: 'Plein-Variable';
+  src: url('resources/Fonte/Fonts/WEB/fonts/Plein-Variable.woff2') format('woff2'),
+       url('resources/Fonte/Fonts/WEB/fonts/Plein-Variable.woff') format('woff'),
+       url('resources/Fonte/Fonts/WEB/fonts/Plein-Variable.ttf') format('truetype');
+       font-weight: 300 900;
+       font-display: swap;
+       font-style: normal;
 }
 
-.sessao-1 {
-  height: 200px;
+body {
+    background-color: #eddece;
+
 }
+.sessao-1-home {
+  background-color: #CC4B23;
+}
+
+
 .card-consultorias {
   border: 2px solid #ddd;
 
@@ -14,6 +34,7 @@ body {
   background-color: #CC4B23;
 }
 .botao-modal {
+  font-family: 'Plein-Bold';
   font-size: larger;
   background-color: #eddece;
   color: #CC4B23;
@@ -21,7 +42,6 @@ body {
   border-color: #eddece;
   width: 225px;
   height: 48px;
-  
   white-space: nowrap;
 }
 .botao-modal:hover {
@@ -32,9 +52,7 @@ body {
 /*  transform: translate(-155%, 85%); */
 
 @media screen and (max-width:1024px) and (min-width: 768px)  {
-  .sessao-1 {
-    height: 700px;
-  }
+  
   #sessao-5-servicos {
     height: 750px;
   
@@ -42,9 +60,7 @@ body {
 }
 
 @media screen and (max-width: 1670px) {
-  .sessao-1 {
-    height: 860px;
-  }
+
   #sessao-5-servicos {
     .row {
       margin-left: 40px;
@@ -75,22 +91,6 @@ body {
   
 }
 
-.bordadinho-left {
-  margin-top: 5px;
-  margin-bottom: 5px;
-  border: 3px solid #eddece;
-  width: 80px;
-  border-radius: 10px;
-}
-
-.bordadinho {
-  margin-top: 5px;
-  margin-bottom: 5px;
-  margin-left: 420px;
-  border: 3px solid #eddece;
-  width: 80px;
-  border-radius: 10px;
-}
 
 .img-card {
   position: relative;
@@ -102,25 +102,21 @@ body {
 
 
 .title-cards {
-  font-size: 2.5rem !important;       
+  font-size: 40px;    
   color: #eddece;
+  font-family: 'Plein-Bold';
 }
 li {
   color: #eddece;
 }
 .subtitle-card {
   color: #eddece;
+  font-family: 'Plein-Bold';
 }
 
-h1 {
-    font-family: "Plein";
-  }
-
-a, .card {
-    font-family: "Plein";
-}
 .navbar-items {
   color: #CC4B23;
+  font-family: 'Plein-Bold';
 
 }
 
@@ -135,6 +131,7 @@ a, .card {
 }
 .opcoesconsultorias {
   color: #eddece;
+  font-family: 'Plein-Variable';
 }
 .opcoesconsultorias:hover {
   border-bottom: 2px solid #D3B2D4;
@@ -151,7 +148,7 @@ a, .card {
   transition: width 0.2s ease;
 }
 .projcard-subtitle {
-  font-family: 'Plein', 'Open Sans', arial, sans-serif;
+
   color: #eddece;
 }
 .opcoesrender {
@@ -174,7 +171,15 @@ a, .card {
 
 .p-config {
   color: #CC4B23;
-  font-size: 45px;
+  font-family: 'Plein-Bold';
+  font-size: 50px;
+}
+
+.title-font {
+  font-family: 'Plein-Bold';
+}
+.subtitle-font {
+  font-family: 'Plein-Variable';
 }
 
 .subtitle {
@@ -215,7 +220,7 @@ a, .card {
 
  .h4-config {
   color:#CC4B23 ;
-  font-family: 'Plein';
+
  }
  .text-consultoria {
   margin-bottom: 10px;
