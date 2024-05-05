@@ -114,6 +114,11 @@ li {
   font-family: 'Plein-Bold';
 }
 
+.text-modal {
+  color: #CC4B23;
+  font-size: larger;
+}
+
 .navbar-items {
   color: #CC4B23;
   font-family: 'Plein-Bold';
